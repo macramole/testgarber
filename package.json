@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/macramole/testgarber/issues"
   },
-  "homepage": "https://github.com/macramole/testgarber#readme"
+  "homepage": "https://github.com/macramole/testgarber#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
