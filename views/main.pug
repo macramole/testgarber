@@ -1,0 +1,16 @@
+html
+  head
+    title Tumblr-o-matic
+    link(href="/css/styles.css", type="text/css", rel="stylesheet")
+  body
+    section(id="sLoading")
+        != "Loading " + blog + " ... ( <span id='txtQtyLoaded'>0</span>/<span id='txtQtyLoadedMax'>0</span> )"
+
+    section(id="mainWrapper")
+
+    script(src="/js/jquery-3.1.1.min.js")
+    script= "var BLOG = '" + blog + "';"
+    script(src="/js/UI.js")
+    script(src="/js/Photos.js")
+    script(src="/js/Settings.js")
+    script(src="/js/main.js")
