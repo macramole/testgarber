@@ -1,4 +1,4 @@
 var Settings = {
     gifsOnly : true,
-    intervalTime : 5000
+    intervalTime : 20000
 }
