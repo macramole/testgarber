@@ -100,4 +100,20 @@ fieldset button:active {
   left: 5px;
   box-shadow: none;
 }
+footer {
+  text-align: center;
+  margin-top: 0.5em;
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+footer a {
+  color: #a6ffff;
+  text-decoration: none;
+}
+footer a span {
+  color: #ffa9f8;
+}
+footer a:hover {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=index.css.map */

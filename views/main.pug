@@ -2,9 +2,10 @@ html
   head
     title Tumblr-o-matic
     link(href="/css/styles.css", type="text/css", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet")
   body
-    section(id="sLoading")
-        != "Loading " + blog + " ... ( <span id='txtQtyLoaded'>0</span>/<span id='txtQtyLoadedMax'>0</span> )"
+    section(id="sLoading")= "Loading " + blog + "..."
+        div ( <span id='txtQtyLoaded'>0</span>/<span id='txtQtyLoadedMax'>0</span> )
 
     section(id="mainWrapper")
 
