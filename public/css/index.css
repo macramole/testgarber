@@ -1,0 +1,103 @@
+body {
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+  margin: 0;
+  font-family: "PT Serif";
+}
+#mainWrapper {
+  background-size: cover;
+}
+#introWrapper {
+  padding: 0.5em;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+}
+#introWrapper p {
+  margin: 0.5em 0;
+}
+#introWrapper p.big {
+  font-size: 1.6em;
+}
+#introWrapper p.big.fat {
+  font-weight: bold;
+}
+#introWrapper a {
+  color: inherit;
+}
+h1 {
+  font-weight: normal;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+div.info {
+  text-align: center;
+  height: 1.5em;
+  overflow: hidden;
+  font-family: Arial;
+  font-size: 0.9em;
+}
+div.info a {
+  color: #a6ffff;
+}
+fieldset {
+  width: 400px;
+  margin: 0em auto 0 auto;
+  border: none;
+  padding: 1em;
+}
+fieldset label {
+  color: #a6ffff;
+  font-size: 1.1em;
+}
+fieldset .field {
+  font-size: 22px;
+  margin-bottom: 1em;
+}
+fieldset .field input {
+  display: inline-block;
+}
+fieldset .field span {
+  color: #ffa9f8;
+}
+fieldset input {
+  display: block;
+  margin: 0.5em 0 1.5em 0;
+  border: none;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+}
+fieldset input[type="checkbox"] {
+  display: inline-block;
+  margin-left: 1em;
+  width: auto;
+  position: relative;
+  top: 3px;
+}
+fieldset button {
+  display: block;
+  margin-top: 1em;
+  background: none;
+  border: none;
+  color: #304e4e;
+  background-color: #a6ffff;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.3em;
+  padding: 0.5em;
+  font-weight: bold;
+  box-shadow: 5px 5px #ffa9f8;
+  cursor: pointer;
+}
+fieldset button:active {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  box-shadow: none;
+}
+/*# sourceMappingURL=index.css.map */

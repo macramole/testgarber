@@ -1,0 +1,127 @@
+// out: ./index.css, sourcemap: true, compress: false
+
+body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    margin: 0;
+    font-family: "PT Serif";
+}
+#mainWrapper {
+    background-size: cover;
+}
+
+#introWrapper {
+    padding: 0.5em;
+    text-align: center;
+    background-color: white;
+    color: black;
+
+    p {
+        margin: 0.5em 0;
+    }
+    p.big {
+        font-size: 1.6em;
+
+        &.fat {
+            font-weight: bold;
+        }
+    }
+
+    a {
+        color: inherit;
+    }
+}
+
+h1 {
+    font-weight: normal;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+div.info {
+    text-align: center;
+    height: 1.5em;
+    overflow: hidden;
+    font-family: Arial;
+    font-size: 0.9em;
+
+    a {
+        color: #a6ffff;
+    }
+}
+
+fieldset {
+    width: 400px;
+    margin: 0em auto 0 auto;
+    border: none;
+    padding: 1em;
+
+    label {
+        color: #a6ffff;
+        // font-weight: bold;
+        font-size: 1.1em;
+        // text-shadow: 1px 2px #ac0e9f;
+        // text-transform: uppercase;
+    }
+
+    .field {
+        font-size: 22px;
+        margin-bottom: 1em;
+
+
+        input {
+            display: inline-block;
+            // text-align: right;
+        }
+        span {
+            color: #ffa9f8;
+        }
+    }
+
+    input {
+        display: block;
+        margin: 0.5em 0 1.5em 0;
+        // width: 100%;
+
+        border: none;
+        color: white;
+        border-bottom: 1px solid white;
+        font-family: inherit;
+        font-size: inherit;
+        background-color: transparent;
+
+
+
+        &[type="checkbox"] {
+            display: inline-block;
+            margin-left: 1em;
+            width: auto;
+            position: relative;
+            top: 3px;
+        }
+    }
+    button {
+        display: block;
+        margin-top: 1em;
+        background: none;
+        border: none;
+        color: #304e4e;
+        background-color: #a6ffff;
+        width: 100%;
+        font-family: inherit;
+        font-size: 1.3em;
+        padding: 0.5em;
+        font-weight: bold;
+        box-shadow: 5px 5px #ffa9f8;
+        cursor: pointer;
+
+        &:active {
+            position: relative;
+            top: 5px;
+            left: 5px;
+            box-shadow: none;
+        }
+    }
+
+}

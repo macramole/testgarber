@@ -1,9 +1,35 @@
 html
   head
     title Tumblr-o-matic
+    link(href="/css/index.css", type="text/css", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet")
   body
-    label Blog:
-    input(id="txtBlog")
-    button(id="btnGo") Go!
+    div#mainWrapper
+        //- div#introWrapper
+        //-     p Been wasting your sleep time reblogging on tumblr all this years ?
+        //-     p.big Me too !
+        //-     p Having a party ? Have a projector or a big TV maybe ? <br> Then <a class='fullscreen' href="#">go fullscreen</a> and amaze your friends effortless with this
+        //-     p.big.fat automatic tumblr slideshow !
+
+        h1 Automatic tumblr slideshow
+        div.info
+            a(href="#") say wha?
+            p Been wasting your sleep time reblogging on tumblr all this years ?
+            p.big Me too !
+            p Having a party ? Have a projector or a big TV maybe ? <br> Then <a class='fullscreen' href="#">go fullscreen</a> and amaze your friends effortless now!
+
+        fieldset
+            //- label Blog:
+            div.field
+                input(id="txtBlog", name="blog", size="20", placeholder="your-blog-name")
+                span .tumblr.com
+            label Seconds between images:
+            input(type="number", id="txtIntervalTime", name="txtIntervalTime", value="20", style="width: 60px")
+
+            label Only GIFs please:
+            input(type="checkbox", id="chkGif", checked="true")
+
+            button(id="btnGo") TUMBLR-O-MATIC
+
     script(src="js/jquery-3.1.1.min.js")
     script(src="js/index.js")

@@ -52,6 +52,10 @@ var Photos = {
             "/getPhotos/" + BLOG + "/" + Photos.qtyTumblrQueries,
             {},
             function(response) {
+                if ( Photos.allPhotos.length == 0 && response.photos.length == 0 ) {
+                    alert("Error, no such tumblr or something");
+                }
+
                 Photos.qtyTumblrQueries++;
                 Photos.preparePhotos(response.photos);
                 if ( callback ) {
