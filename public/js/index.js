@@ -1,4 +1,3 @@
-// Find the right method, call on correct element
 function launchIntoFullscreen(element) {
   if(element.requestFullscreen) {
     element.requestFullscreen();
@@ -15,7 +14,17 @@ function onWindowResize() {
     $("#mainWrapper").height( window.innerHeight );
 }
 
+function loadSettings() {
+    var cookieSettings = Cookies.getJSON("settings");
+    if ( typeof cookieSettings != "undefined" ) {
+        $("#txtIntervalTime").val( cookieSettings.intervalTime );
+        $("#chkGifsOnly")[0].checked = cookieSettings.gifsOnly;
+    }
+}
+
 $(function() {
+    loadSettings();
+
     onWindowResize();
     $(window).resize(onWindowResize);
 
@@ -23,6 +32,12 @@ $(function() {
         launchIntoFullscreen(document.documentElement);
     });
     $("#btnGo").click(function() {
+        Cookies.set("settings", {
+            intervalTime : $("#txtIntervalTime").val(),
+            gifsOnly : $("#chkGifsOnly")[0].checked
+        }, { expires: 365 });
+
+
         document.location.href = $("#txtBlog").val() + "/";
     });
     $("div.info a").click(function() {

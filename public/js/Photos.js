@@ -53,7 +53,7 @@ var Photos = {
             {},
             function(response) {
                 if ( Photos.allPhotos.length == 0 && response.photos.length == 0 ) {
-                    alert("Error, no such tumblr or something");
+                    $("#sLoading").html("<div class='error'><h1>Ooops, we are experiencing a heavy crash</h1><div>The tumblr you've entered doesn't exist or the API just don't like it<div></div>");
                 }
 
                 Photos.qtyTumblrQueries++;
@@ -73,6 +73,8 @@ var Photos = {
                 if ( photo.substr( photo.length - 3 ) == "gif" ) {
                     filteredPhotos.push(photo);
                 }
+            } else {
+                filteredPhotos.push(photo);
             }
         }
 

@@ -5,12 +5,6 @@ html
     link(href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet")
   body
     div#mainWrapper
-        //- div#introWrapper
-        //-     p Been wasting your sleep time reblogging on tumblr all this years ?
-        //-     p.big Me too !
-        //-     p Having a party ? Have a projector or a big TV maybe ? <br> Then <a class='fullscreen' href="#">go fullscreen</a> and amaze your friends effortless with this
-        //-     p.big.fat automatic tumblr slideshow !
-
         h1 Automatic tumblr slideshow
         div.info
             a(href="#") say wha?
@@ -24,15 +18,16 @@ html
                 input(id="txtBlog", name="blog", size="20", placeholder="your-blog-name")
                 span .tumblr.com
             label Seconds between images:
-            input(type="number", id="txtIntervalTime", name="txtIntervalTime", value="20", style="width: 60px")
+            input(type="number", id="txtIntervalTime", name="txtIntervalTime", value="20", style="width: 40px")
 
             label Only GIFs please:
-            input(type="checkbox", id="chkGif", checked="true")
+            input(type="checkbox", id="chkGifsOnly", checked="true")
 
             button(id="btnGo") TUMBLR-O-MATIC
 
         footer
-            a(href="http://leandrogarber.info", target="_blank") Made with <span>❤</span> in Buenos Aires
+            a(href="http://github.com/macramole/tumblr-o-matic", target="_blank") Made with <span>❤</span> in Buenos Aires
 
     script(src="js/jquery-3.1.1.min.js")
+    script(src="js/js.cookie.js")
     script(src="js/index.js")

@@ -76,8 +76,6 @@ fieldset input[type="checkbox"] {
   display: inline-block;
   margin-left: 1em;
   width: auto;
-  position: relative;
-  top: 3px;
 }
 fieldset button {
   display: block;
@@ -115,5 +113,10 @@ footer a span {
 }
 footer a:hover {
   text-decoration: underline;
+}
+footer a.github {
+  display: block;
+  margin-top: 0.8em;
+  opacity: 0.6;
 }
 /*# sourceMappingURL=index.css.map */

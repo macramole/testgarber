@@ -4,12 +4,16 @@ html
     link(href="/css/styles.css", type="text/css", rel="stylesheet")
     link(href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet")
   body
-    section(id="sLoading")= "Loading " + blog + "..."
-        div ( <span id='txtQtyLoaded'>0</span>/<span id='txtQtyLoadedMax'>0</span> )
+    section(id="sLoading")
+        div!= "Preloading <strong>" + blog + "</strong>"
+        div.smooth for the smooth experience you deserve
+        div.counter ( <span id='txtQtyLoaded'>0</span>/<span id='txtQtyLoadedMax'>0</span> )
+        div.please Please, sit back, <a href="#" id="goFullscreen">fullscreen me</a> and chill
 
     section(id="mainWrapper")
 
     script(src="/js/jquery-3.1.1.min.js")
+    script(src="/js/js.cookie.js")
     script= "var BLOG = '" + blog + "';"
     script(src="/js/UI.js")
     script(src="/js/Photos.js")

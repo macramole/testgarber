@@ -14,4 +14,26 @@ body {
   text-align: center;
   font-size: 1.8em;
 }
+#sLoading .smooth {
+  font-size: 0.6em;
+}
+#sLoading .counter {
+  font-size: 0.8em;
+}
+#sLoading .please {
+  font-size: 0.8em;
+  margin-top: 1em;
+  color: #a6ffff;
+}
+#sLoading .please a {
+  color: #ffa9f8;
+}
+#sLoading .error {
+  font-size: 0.8em;
+  color: #a6ffff;
+}
+#sLoading .error h1 {
+  font-weight: normal;
+  color: #ffa9f8;
+}
 /*# sourceMappingURL=styles.css.map */
