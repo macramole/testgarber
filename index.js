@@ -34,6 +34,7 @@ app.get('/getPhotos/:blog/:offset', function (req, res) {
               ret.photos.push( photo.photos[0].original_size.url );
           }
       } else {
+          console.log(error);
           ret.status = "error";
       }
 

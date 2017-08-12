@@ -43,5 +43,14 @@ $(function() {
     $("div.info a").click(function() {
         // $("div.info").css("overflow", "visible");
         $("div.info").css("height", "auto");
+        $(this).remove();
+    });
+    $("a.more").click(function() {
+        $(".psst").css("height", "auto");
+        $(this).remove();
+    });
+
+    $(".psst .tumblrs a").click(function() {
+        $("#txtBlog").val( $(this).text() );
     });
 });

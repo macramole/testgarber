@@ -11,7 +11,13 @@ body {
 #mainWrapper {
     background-repeat: no-repeat;
     background-position: center center;
-    // background-size: contain;
+
+    &.zoomMode {
+        background-size: contain;
+    }
+    &.mosaicMode {
+        background-repeat: repeat;
+    }
 }
 #sLoading {
     margin-top: 2em;
@@ -31,6 +37,27 @@ body {
 
         a {
             color: #ffa9f8;
+        }
+    }
+    .pro {
+        font-size: 0.5em;
+
+        h3 {
+            font-weight: normal;
+        	/* text-decoration: underline; */
+        	margin-bottom: 0;
+        	width: 8em;
+        	margin: 4em auto 0.6em auto;
+        	border-bottom: 1px solid #fff6;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 0.3em;
+
+            li {
+                font-style: italic;
+            }
         }
     }
 

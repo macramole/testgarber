@@ -9,6 +9,12 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
+#mainWrapper.zoomMode {
+  background-size: contain;
+}
+#mainWrapper.mosaicMode {
+  background-repeat: repeat;
+}
 #sLoading {
   margin-top: 2em;
   text-align: center;
@@ -27,6 +33,25 @@ body {
 }
 #sLoading .please a {
   color: #ffa9f8;
+}
+#sLoading .pro {
+  font-size: 0.5em;
+}
+#sLoading .pro h3 {
+  font-weight: normal;
+/* text-decoration: underline; */
+  margin-bottom: 0;
+  width: 8em;
+  margin: 4em auto 0.6em auto;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+#sLoading .pro ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.3em;
+}
+#sLoading .pro ul li {
+  font-style: italic;
 }
 #sLoading .error {
   font-size: 0.8em;

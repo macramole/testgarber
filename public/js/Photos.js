@@ -5,7 +5,7 @@ var Photos = {
 
     qtyTumblrQueries : 0,
 
-    QTY_PHOTOS_TO_LOAD : 5,
+    QTY_PHOTOS_TO_LOAD : 8,
 
     init : function() {
         Photos.getMorePhotos(null);

@@ -69,12 +69,35 @@ fieldset {
         font-size: 22px;
         margin-bottom: 1em;
 
+        .psst {
+            font-size: 0.5em;
+            overflow: hidden;
+            height: 1.5em;
+            margin-top: 0.7em;
 
+
+            a {
+                color: #ffa9f8;
+                outline: 0;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                &.more {
+                    opacity: 0.7;
+                    display: block;
+                    text-decoration: underline;
+                }
+            }
+        }
         input {
             display: inline-block;
             // text-align: right;
+            margin-bottom: 0;
         }
-        span {
+        > span {
             color: #ffa9f8;
         }
     }
